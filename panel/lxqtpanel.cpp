@@ -570,7 +570,7 @@ void LXQtPanel::realign()
     qDebug() << "Length:        " << mLength << (mLengthInPercents ? "%" : "px");
     qDebug() << "Alignment:     " << (mAlignment == 0 ? "center" : (mAlignment < 0 ? "left" : "right"));
     qDebug() << "Position:      " << positionToStr(mPosition) << "on" << mScreenNum;
-    qDebug() << "Plugins count: " << mPlugins.count();
+    qDebug() << "Plugins count: " << mPlugins->rowCount();
 #endif
 
     setPanelGeometry();
